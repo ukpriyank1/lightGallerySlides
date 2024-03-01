@@ -62,8 +62,8 @@ const Carasoul = () => {
             className='img-responsive'
             src={item.src}
             alt='identity'
-            width='500'
-            height='500'
+            width='200'
+            height='200'
           />
         </div>
       );
@@ -81,6 +81,7 @@ const Carasoul = () => {
         plugins={[lgZoom]}
         elementClassNames='custom-class-name'
         onInit={onInit}
+        className='image-slides'
       >
         {getItems()}
       </LightGallery>
